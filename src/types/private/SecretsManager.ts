@@ -1,7 +1,12 @@
 import type { NonOptional } from '@beanc16/utility-types';
-import { SecretsManagerGetParameters } from '../SecretsManager.js';
+import type { SecretsManagerGetBulkParameters, SecretsManagerGetParameters } from '../SecretsManager.js';
 
 export type SecretsManagerGetParametersParsed = NonOptional<
     SecretsManagerGetParameters,
+    'config'
+>;
+
+export type SecretsManagerGetBulkParametersParsed = NonOptional<
+    SecretsManagerGetBulkParameters,
     'config'
 >;
