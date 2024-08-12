@@ -12,6 +12,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "build:watch": "tsc --watch --preserveWatchOutput",
     "lint": "npx eslint . --ext .ts",
     "lint-src": "npx eslint ./src --ext .ts",
     "test": "",
